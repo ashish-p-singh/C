@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
     double result=0.0;
     printf("Enter num1: ");
     scanf("%lf",&num1);
-
+    char op;
     printf("Enter operator: ");
     scanf(" %c",&op);//input buffer
     printf("Enter num2: ");
