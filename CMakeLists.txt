@@ -8,5 +8,6 @@ file(GLOB C_FILES "*.c")
 foreach(file ${C_FILES})
     get_filename_component(name ${file} NAME_WE)
     add_executable(${name} ${file}
+            nested_loops.c
     )
 endforeach()
