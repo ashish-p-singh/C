@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int r;
     int c;
     char s;
@@ -9,11 +9,12 @@ int main(void) {
     printf("Enter number of columns: ");
     scanf("%d", &c);
     printf("Enter the symbol: ");
-    scanf("%c", &s);
+    scanf(" %c", &s);
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
             printf("%c", s);
         }
+        printf("\n");
     }
     return 0;
 }
