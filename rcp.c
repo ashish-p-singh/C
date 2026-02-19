@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//computer choice
 int cchoice(){
     return (rand()%3)+1;
 }
+//user choice
 int uchoice(){
     int choice;
     do{
@@ -16,6 +18,7 @@ int uchoice(){
     }while(choice<1 || choice >3);
     return choice;
 }
+//winner decleration
 void winner(int uch,int cch){
     if (uch == cch){
         printf("It is a tie🤝");
@@ -31,8 +34,8 @@ int main(int argc, char const *argv[])
 {
     srand(time(NULL));
     printf("Rock Paper Scissors\n");
-    int uch=uchoice();
-    int cch=cchoice();
+    int uch=uchoice();//user choice
+    int cch=cchoice();//computer choice
     switch(uch){
         case 1:
         printf("You chose Rock\n");
