@@ -11,7 +11,7 @@ int uchoice(){
     do{
         printf("Choose and option:\n");
         printf("1 for Rock\n");
-        printf("2 for aper\n");
+        printf("2 for Paper\n");
         printf("3 for Scissors\n");
         printf("Enter your choice:");
         scanf("%d",&choice);
