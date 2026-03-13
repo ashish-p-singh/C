@@ -8,10 +8,6 @@ float deposit(){
     scanf("%f",&amount);
     if(amount<0){
         printf("Enter invalid amount\n");
-    }
-    else if(){
-        
-    }
 }
 float withdraw(){}
 int main(){
