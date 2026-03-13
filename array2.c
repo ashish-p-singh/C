@@ -24,3 +24,39 @@
 //     printf("%d",temp);
 //  }
 //---------------------------------------------------------
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     int arr[7]={2,4,6,8,10,12,15};
+//     int temp=arr[6];
+//     for (int i=6;i>=0;i--){
+//         arr[i]=arr[i-1];
+        
+//     }
+//     arr[0]=temp;
+//     for(int i=0;i<7;i++){
+//         printf("%d ",arr[i]);
+//     }
+//     return 0;
+// }
+//--------------------------------------------------------------00
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     int arr[7]={2,4,6,8,10,12,15};
+    
+//     int n=45;
+//     for(int j=0;j<n;j++){
+//         int temp=arr[6];
+//     for (int i=6;i>=0;i--){
+//         arr[i]=arr[i-1];
+//     }
+//     arr[0]=temp;
+// }
+//     for(int i=0;i<7;i++){
+//         printf("%d ",arr[i]);
+//     }
+//     return 0;
+// }
+//----------------------------------------------
+
