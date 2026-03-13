@@ -1,1 +1,1 @@
-    return 0;
+printf("Select an option\n");

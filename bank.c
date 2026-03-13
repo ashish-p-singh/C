@@ -9,17 +9,18 @@ float deposit(){
     if(amount<0){
         printf("Enter invalid amount\n");
 }
+}
 float withdraw(){}
 int main(){
     int choice;
     float balance=0.0f;
-    printf("Welcome to Bank ATM");
+    printf("Welcome to Bank ATM\n");
     do{
-        printf("Select an option\n");
         printf("1.Check Balance\n");
         printf("2.Deposit money\n");
         printf("3.Withdraw money\n");
-        printf("4.Exit");
+        printf("4.Exit\n");
+        printf("Select an option\n");
         scanf("%d",&choice);
         switch(choice){
             case 1:
