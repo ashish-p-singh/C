@@ -59,27 +59,47 @@
 //     return 0;
 // }
 //----------------------------------------------
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     int arr[3]={'m','u','g'};
+//     int arr2[3]={'g','u','m'};
+//     int check=0;
+//     for (int i=0;i<3;i++){
+//         for (int j=0;j<3;j++){
+//         if(arr[i]==arr2[j]){
+//             check++;
+//             break;
+//         }
+//     }
+// }
+//     if(check==3){
+//         printf("Anagram");
+//     }
+//     else{
+//         printf("Not an Anagram");
+//     }
+//     return 0;
+//  }
+//----------------Bubble Sorting Technique--------------------------------
 #include <stdio.h>
-int main(int argc, char const *argv[])
-{
-    int arr[3]={'m','u','g'};
-    int arr2[3]={'g','u','m'};
-    int check=0;
-    for (int i=0;i<3;i++){
-        for (int j=0;j<3;j++){
-        if(arr[i]==arr2[j]){
-            check++;
-            break;
+int main(){
+    int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int a=n;
+    for (int i=0;i<n;i++){
+        for(int j=0;j<a-1;j++){
+            if(arr[j]<arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
         }
+        a--;
     }
-}
-    if(check==3){
-        printf("Anagram");
+    for (int b=0;b<n;b++){
+        printf("%d ",arr[b]);
     }
-    else{
-        printf("Not an Anagram");
-    }
-
     return 0;
 }
 
