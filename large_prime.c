@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     
     long long int res = -1;
     long long int i = 2;
-    
+
     // Handle factor 2 separately (even numbers)
     while (n % 2 == 0) {
         res = 2;
