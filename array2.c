@@ -58,48 +58,83 @@
 //     }
 //     return 0;
 // }
-//----------------------------------------------
+//----------------Bubble Sorting Technique--------------------------------
 // #include <stdio.h>
-// int main(int argc, char const *argv[])
-// {
-//     int arr[3]={'m','u','g'};
-//     int arr2[3]={'g','u','m'};
-//     int check=0;
-//     for (int i=0;i<3;i++){
-//         for (int j=0;j<3;j++){
-//         if(arr[i]==arr2[j]){
-//             check++;
-//             break;
+// int main(){
+//     int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int a=n;
+//     for (int i=0;i<n;i++){
+//         for(int j=0;j<a-1;j++){
+//             if(arr[j]<arr[j+1]){
+//                 int temp=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//             }
 //         }
+//         a--;
 //     }
-// }
-//     if(check==3){
-//         printf("Anagram");
-//     }
-//     else{
-//         printf("Not an Anagram");
+//     for (int b=0;b<n;b++){
+//         printf("%d ",arr[b]);
 //     }
 //     return 0;
-//  }
-//----------------Bubble Sorting Technique--------------------------------
+// }
+//-----------------------------------------------------
+// #include <stdio.h>
+// int main(){
+//     int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int a=arr[0];
+//     for (int i=0;i<n;i++){
+//         if(arr[i]<arr[i+1]){
+//             a=arr[i+1];
+//         }
+//     }
+// printf("%d",a);
+// }
+//-------------------------------------------------------------
+// #include <stdio.h>
+// int main(){
+//     int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int a=arr[0];
+//     int b=arr[0];
+//     for (int i=0;i<n;i++){
+//         if(arr[i]>a){
+//             b=a;
+//             a=arr[i];
+//         }
+//         else if (arr[i]>b && arr[i]!=a){
+//             b=arr[i];
+//         }
+//     }
+  
+// printf("%d",b);
+// }
+//-------------------------------Anagram of string-------------------------------------
 #include <stdio.h>
-int main(){
-    int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
-    int n=sizeof(arr)/sizeof(arr[0]);
-    int a=n;
-    for (int i=0;i<n;i++){
-        for(int j=0;j<a-1;j++){
-            if(arr[j]<arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
+#include <string.h>
+void anagram(char str1[],char str2[]){
+    int count[256]={0};
+    int n1=strlen(str1);
+    int n2=strlen(str2);
+    for(int i=0;i<n1;i++){
+        count[str1[i]]++;
+        count[str2[i]]--;
+    }
+    for (int i=0;i<256;i++){
+        if(count[i]!=0){
+            printf("not an Anagram");
+            return ;
         }
-        a--;
     }
-    for (int b=0;b<n;b++){
-        printf("%d ",arr[b]);
-    }
+    printf("Anagaram");
+    
+}
+int main()
+{
+    char str1[]="dmm";
+    char str2[]="mdm";
+    anagram(str1,str2);
     return 0;
 }
-
