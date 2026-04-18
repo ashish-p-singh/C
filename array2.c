@@ -59,26 +59,26 @@
 //     return 0;
 // }
 // ----------------Bubble Sorting Technique--------------------------------
-// #include <stdio.h>
-// int main(){
-//     int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
-//     int n=sizeof(arr)/sizeof(arr[0]);
-//     int a=n;
-//     for (int i=0;i<n;i++){
-//         for(int j=0;j<a-1;j++){
-//             if(arr[j]<arr[j+1]){
-//                 int temp=arr[j];
-//                 arr[j]=arr[j+1];
-//                 arr[j+1]=temp;
-//             }
-//         }
-//         a--;
-//     }
-//     for (int b=0;b<n;b++){
-//         printf("%d ",arr[b]);
-//     }
-//     return 0;
-// }
+#include <stdio.h>
+int main(){
+    int arr[]={10,12,2,5,6,89,88,52,45,17,55,68,97,94,13};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int a=n;
+    for (int i=0;i<n;i++){
+        for(int j=0;j<a-1;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+       a--;
+    }
+    for (int b=0;b<n;b++){
+        printf("%d ",arr[b]);
+    }
+    return 0;
+}
 // -----------------------------------------------------
 // #include <stdio.h>
 // int main(){

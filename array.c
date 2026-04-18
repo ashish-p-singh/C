@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
         } else if (arr[mid] > target) {
             r = mid - 1;
         } else {  // Fixed: This should be the case when arr[mid] < target
-            l = mid + 1;
+            l = mid + 1;  
         }
     }
 
