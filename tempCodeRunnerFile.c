@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 // #include <string.h>
 // void anagram(char str1[],char str2[]){
 //     int count[256]={0};
@@ -32,20 +32,41 @@
 //     printf("%d",*(ptr+(4*4)+(4)));
 //     return 0;
 // }
-int main(){
-    int arr[3]={2,0,1};
-    int k=0;
-    int temp[3];
-    for(int i=0;i<3;i++){
-        for (int j=0;j<3;j++){
-        if(arr[j]==k){
-            arr[j]=arr[k];
-            j++;
-        }
-    }
-    }
-    for(int i=0;i<3;i++){
-        printf("%d \n",arr[i]);
-    }
+// int main(){
+//     int arr[3]={2,0,1};
+//     int k=0;
+//     int temp[3];
+//     for(int i=0;i<3;i++){
+//         for (int j=0;j<3;j++){
+//         if(arr[j]==k){
+//             arr[j]=arr[k];
+//             j++;
+//         }
+//     }
+//     }
+//     for(int i=0;i<3;i++){
+//         printf("%d \n",arr[i]);
+//     }
     
+// }
+//--------------------------------
+#include <stdio.h>
+
+int factorial(int n) {
+    int result = 1;
+
+    for (int i = 1; i <= n; i++) {
+        result *= i;   // 👈 breakpoint here
+    }
+
+    return result;
+}
+
+int main() {
+    int num = 5;
+    int ans = factorial(num);
+
+    printf("Factorial of %d is %d\n", num, ans);
+
+    return 0;
 }
