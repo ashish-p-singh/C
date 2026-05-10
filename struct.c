@@ -34,5 +34,5 @@ typedef struct{
 }Employee;
 int main(){
     Employee e1={1,"Ayush",20.0};
-    printf("%.2f",e1.salary);
+    printf("%d",e1.emp_id);
 }
