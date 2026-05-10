@@ -11,7 +11,7 @@
 //     printf("%d",a.gpa);
 // }
 //-------------------------------------------------
-#include <stdio.h>
+// #include <stdio.h>
 // typedef struct{
 //     int age;
 //     char name[30];
