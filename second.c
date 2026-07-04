@@ -9,7 +9,7 @@ int main() {
     // char name[20];
     // scanf("%s",&name);
     // printf("Hello, %s!\n",name);
-    getchar(); //consume leftover newline
+    // getchar(); //consume leftover newline
     printf("enter full name: ");
     char fullname[50];
     fgets(fullname,sizeof(fullname),stdin);

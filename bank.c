@@ -10,7 +10,9 @@ float deposit(){
         printf("Enter invalid amount\n");
 }
 }
-float withdraw(){}
+float withdraw(){
+    
+}
 int main(){
     int choice;
     float balance=0.0f;

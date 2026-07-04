@@ -3,9 +3,10 @@
 int main(int argc, char const *argv[])
 {
     int arr[14] = {2, 4, 6, 8, 12, 20, 25, 40, 45, 90, 108, 120, 140, 150};
+    int n=sizeof(arr)/sizeof(arr[0]);
     int l = 0;
-    int r = 13;  // Could use sizeof(arr)/sizeof(arr[0]) - 1 for flexibility
-    int target = 108;
+    int r = n-1;  // Could use sizeof(arr)/sizeof(arr[0]) - 1 for flexibility
+    int target = 150;
     int found = 0;  // Flag to track if target is found
 
     while (l <= r) {
